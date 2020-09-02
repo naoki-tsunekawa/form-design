@@ -7,11 +7,20 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="cp_iptxt">
-		<input class="ef" type="text" placeholder="">
-		<label>お名前</label>
-		<span class="focus_line"></span>
-	</div>
+	<div class="container">
+		<h1>ログイン</h1>
+		<form action="/login" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="RDl3FHz8SkiyfIJ0DPv9DB0cB8kA6kmubly3/vQ7Zur0ze8hHWw68bIqzBlhglKfZVELlfS7kKjah/zzMEJ0qw==">
+			<div class="form-group">
+				<label for="session_email">メールアドレス</label>
+				<input class="form-control" id="session_email" type="text" name="session[email]">
+			</div>
+			<div class="form-group">
+				<label for="session_password">パスワード</label>
+				<input class="form-control" id="session_password" type="password" name="session[password]">
+			</div>
+			<input type="submit" name="commit" value="ログインする" class="btn btn-primary" data-disable-with="ログインする">
+	</form>
+</div>
 
 </body>
 </html>
